@@ -1,0 +1,18 @@
+{% load menu_tree_filter %}
+
+{% if menu.main %}
+    <nav>
+        <ul>
+            {% for submenu in menu.submenu %}
+            {% with link='/submenu/'|add:menu.main.slug|add:'/'|add:submenu.slug %}
+            <li class="{% if request.path == link %}active{% endif %}">
+                <a href="{% url 'menu:submenu_do_something' menu.main.slug submenu.slug %}">{{ submenu }}</a>
+                {% draw_submenu submenu menu.main %}
+            </li>
+            {% endwith %}
+            {% endfor %}
+        </ul>
+    </nav>
+{% else %}
+    <p>{{ menu.error }}</p>
+{% endif %}

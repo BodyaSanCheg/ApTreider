@@ -1,0 +1,21 @@
+{% extends 'menu/main.html' %}
+{% load static %}
+{% load menu_tree_filter %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ main_slug }}{% endblock title %}</title>
+</head>
+<body>
+    {% block tree %}
+    <a href="{% url 'menu:main' %}">Главная</a>
+    <nav>
+        {% draw_menu main_slug %}
+    </nav>
+    {% endblock tree %}
+</body>
+</html>
