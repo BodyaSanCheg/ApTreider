@@ -3,7 +3,7 @@
 
 
 Само дерево меню выглядит следующим образом. Выкидные списки, которые отображаются при наведении курсора
-![image](https://user-images.githubusercontent.com/105903188/227263831-89a5679a-0ed5-40f5-8a5c-43c4f3e7077a.png)
+![image](https://user-images.githubusercontent.com/105903188/234499316-b0fb0c34-f29d-40fd-bc03-6b340c5739fc.png)
 
 Все, что над выделенным пунктом - развернуто. Первый уровень вложенности под выделенным пунктом тоже развернут.
 ![image](https://user-images.githubusercontent.com/105903188/234499119-5e060c97-58c7-4767-ae27-992e60a0c6b1.png)
