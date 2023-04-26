@@ -12,9 +12,8 @@
 </head>
 <body>
     {% block tree %}
-    <a href="{% url 'menu:main' %}">Главная</a>
     <nav>
-        {% draw_menu main_slug %}
+        {% draw_menu main_slug active_link %}
     </nav>
     {% endblock tree %}
 </body>

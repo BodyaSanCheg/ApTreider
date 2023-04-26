@@ -2,12 +2,10 @@
 {% load static %}
 
 <ul>
-    {% for sub_menu in submenu_and_main.submenu.get_submenu %}
-    {% with link='/submenu/'|add:submenu_and_main.main.slug|add:'/'|add:sub_menu.slug %}
-    <li class="{% if request.path == link %}active{% endif %}">
-        <a href="{% url 'menu:submenu_do_something' submenu_and_main.main.slug sub_menu.slug %}">{{ sub_menu }}</a>
-        {% draw_submenu sub_menu submenu_and_main.main %}
+    {% for sub_menu in submenu_and_parents.submenu.get_submenu %}
+    <li class="{% if sub_menu.slug in submenu_and_parents.parents_active_link %}active{% endif %}">
+        <a href="{% url 'menu:submenu_do_something' submenu_and_parents.main sub_menu.slug %}">{{ sub_menu }}</a>
+        {% draw_submenu sub_menu submenu_and_parents.parents_active_link %}
     </li>
-    {% endwith %}
     {% endfor %}
 </ul>

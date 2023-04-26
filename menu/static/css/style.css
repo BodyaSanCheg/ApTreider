@@ -54,6 +54,12 @@ nav ul li:hover>ul {
     display: inherit;
 }
 
+/* отображаем активный выпадающий список */
+nav ul li.active>ul {
+    display: inherit;
+    
+}
+
 /* первый уровень выпадающего списка */
 nav ul ul li {
     min-width: 170px;
