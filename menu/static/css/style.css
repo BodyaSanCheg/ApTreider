@@ -54,8 +54,8 @@ nav ul li:hover>ul {
     display: inherit;
 }
 
-/* отображаем активный выпадающий список
-nav ul li.active>ul {
+/* отображаем активный выпадающий список */
+/* nav ul li.active>ul {
     display: inherit;
     
 } */
