@@ -7,3 +7,7 @@
 
 Все, что над выделенным пунктом - развернуто. Первый уровень вложенности под выделенным пунктом тоже развернут.
 ![image](https://user-images.githubusercontent.com/105903188/234499119-5e060c97-58c7-4767-ae27-992e60a0c6b1.png)
+
+Реализация в Админке с разделением на главную ветвь и подветви
+![image](https://user-images.githubusercontent.com/105903188/234499602-1aaec02a-1216-4e34-bb7d-808fd4e9ec60.png)
+![image](https://user-images.githubusercontent.com/105903188/234499918-aac776cf-26a3-4484-9749-f1ae0dea99c6.png)
